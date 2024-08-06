@@ -10,7 +10,7 @@ My website is a Personal Library website. It's a site for me to share with viewe
 
     3. michio.html: page giving a short bio of Michio Kaku. It also shows short summaries of the two books of his that I've read, links to the respective Amazon pages that appear upon hovering over the book photo, and a survey to see what my viewers think about Dr. Kaku.
 
-**GitHub Repo:** 
+[**GitHub Repo**](https://github.com/melvingonzalezjr/SBA307_Melvins_Library)
 
 ## Reflection
 
