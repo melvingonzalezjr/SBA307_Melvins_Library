@@ -1,0 +1,68 @@
+body {
+  /* Background library image */
+  background-image: url("../images/library.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #c2c5aa;
+  font-size: 1.5em;
+}
+
+#about p {
+  border: #582f0e 5px solid;
+  background-color: #333d29;
+  opacity: 0.9;
+}
+
+.book-container {
+  display: flex;
+}
+
+figure {
+  flex: 50%;
+}
+
+figure img {
+  width: 50%;
+}
+
+#quantum,
+#future {
+  position: relative;
+  padding: 0;
+}
+
+#quantum .summary,
+#future .summary {
+  border: #582f0e 5px solid;
+  background-color: #333d29;
+  opacity: 0.9;
+}
+
+#quantum .amazonLink,
+#future .amazonLink {
+  position: absolute;
+  left: 135px;
+  top: 0;
+  width: 50%;
+  height: 450px;
+  /* color: #582f0e; */
+  background-color: rgb(3, 4, 94, 0.95);
+  text-align: center;
+  line-height: 550px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+#quantum:hover .amazonLink,
+#future:hover .amazonLink {
+  opacity: 1;
+}
+
+#survey {
+  border: #582f0e 5px solid;
+  background-color: #333d29;
+  opacity: 0.9;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/home.css" />
+
+    <!-- Internal Styling -->
+    <style>
+      body {
+        /* Background library image */
+        background-image: url("../images/library.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: center;
+        color: #c2c5aa;
+        font-size: 1.5em;
+      }
+    </style>
+
+    <title>Melvin's Library</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="welcome">Welcome to Melvin's Library!</h1>
+    </header>
+    <hr />
+
+    <!-- Dr. Seuss Quote as an image -->
+    <div id="quote">
+      <img
+        src="../images/homeImages/Dr Seuss Oh The Places Youll Go Quotes.jpg"
+        alt="Dr Seuss Quote"
+        id="drSeussQuote"
+      />
+    </div>
+
+    <!-- Explainers Class explain Why I created this site for my personal library and how one an explore more of what I'm reading 
+    *h2 with Question (Why/How), textAndGIF div container to hold text and GIF to appear inline
+    -->
+    <div class="explainers" id="why">
+      <h2>Why?</h2>
+      <div class="textAndGIF">
+        <p>
+          After I started college, I regained intellectual curiosity. I listened
+          to many podcasts to for life advice, and a common theme was to always
+          read and learn. I had fun nerding out in my classes, so I figured it
+          will be fun to nerd out during my free time. I have read a great deal
+          of books in the past 2 years, and I appreciate the amount of knowledge
+          and the many perspectives that exist in the world. Come learn and grow
+          with me!
+        </p>
+        <img
+          src="../images/homeImages/why-just-why.gif"
+          id="whyGIF"
+          alt="why GIF"
+        />
+      </div>
+    </div>
+
+    <div class="explainers" id="how">
+      <h2>How?</h2>
+      <div class="textAndGIF">
+        <img src="../images/homeImages/how.gif" id="howGIF" alt="how GIF" />
+        <p>
+          Use the drop-down menu below to choose whether you wish to browse
+          books via genre or author. From the next page, you can read more
+          details about the different genres or authors and the books associated
+          with them. Remember, reading is an adventure. Let's see where you'll
+          go!
+        </p>
+      </div>
+    </div>
+
+    <!-- Dropdown Menu allows users to select whether to view my library grouped by Genres or Authors? -->
+    <form id="dropdown" action="#">
+      <label>Select a category to organize your search:</label>
+      <select name="categories">
+        <option value="genres">Genres</option>
+        <option value="authors">Authors</option>
+      </select>
+    </form>
+
+    <br />
+
+    <img
+      src="../images/homeImages/upright-point.gif"
+      id="upGIF"
+      alt="GIF pointing up"
+    />
+
+    <!-- Getting recommedations from user -->
+    <div class="recommendation">
+      <h2>Wanna Help Me?</h2>
+      <p id="help">
+        I'm looking to expand my library, and therefore my knowledge. But I
+        don't know what my next read should be. I have two fine choices. Just
+        click on the respective name to view the Amazon page and learn more
+        about the book. And vote below which do you think is the better, more
+        inspiring book for me to try out next. OR......if you think you have a
+        better idea for my next book, tell me what that is :)
+      </p>
+
+      <p id="newBooks">
+        <a
+          href="https://www.amazon.com/Grant-Ron-Chernow-audiobook/dp/B074F3SLTL/ref=sr_1_1?dib=eyJ2IjoiMSJ9.lNer50dqMcGggExQDFR8nw.8WwnMRftps0Yuw9SYnbpYlqZYdVKWKdomcLmCcobH3E&dib_tag=se&keywords=grant+ron+gernow&qid=1722915177&sr=8-1"
+          ><i>Grant</i>-Ron Chernow</a
+        >
+        <a
+          href="https://www.amazon.com/Cant-Hurt-Me-David-Goggins-audiobook/dp/B07KKP62FW/ref=sr_1_1?crid=KY02SLH6DX7Q&dib=eyJ2IjoiMSJ9.YM-4L_1b9QCG49acOEJ4DIASbTPlkFt7PLR_6yJ9KCEjTYjg5vgR_D-RfK-S6S56ggH7iC-kY-xjbEW88DTKFVNYOnmX1MnTA0VbYrTj4WsWyu6GRObnop4w-RlME8HFkMSivjPVchAzgEPxRG9dP49IcIcbGQmU-k1y-fAOQ795bgM4xOKWFSpIrD2aenaPURzQVbev0sNHox14c0h4n_vqtjjUL3wqbslktwsAk_E.qH-JIzn0f9aEcMXWZBOwEXW3Sa7Lpo7y2aFbybszp8A&dib_tag=se&keywords=cant+hurt+me&qid=1722915305&sprefix=cant+hurt+me%2Caps%2C110&sr=8-1"
+          ><i>Can't Hurt Me</i>-David Goggins</a
+        >
+      </p>
+    </div>
+
+    <!-- Selector for next book. One of two choices or type in -->
+    <form action="#" id="nextRead">
+      <fieldset>
+        <legend>What Should I Read Next?</legend>
+        <label>
+          <input type="radio" name="radio" id="grant" /><i>Grant</i>
+        </label>
+        <label>
+          <input type="radio" name="radio" id="cantHurt" /><i>Can't Hurt Me</i>
+        </label>
+        <label>
+          <input type="radio" name="radio" id="other" />Other:
+          <input type="text" placeholder="Title, Author" /> </label
+        ><br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

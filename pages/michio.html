@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/michio.css" />
+
+    <!-- Internal Styling -->
+    <style>
+      body {
+        /* Background library image */
+        background-image: url("../images/library.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: center;
+        color: #c2c5aa;
+        font-size: 1.5em;
+      }
+    </style>
+
+    <title>Michio Kaku</title>
+  </head>
+
+  <body>
+    <h1>About Michio Kaku</h1>
+    <hr />
+
+    <!-- About Michio. 2 Paragraphs (#1 about him, #2 about my fascination) -->
+    <div id="about">
+      <img
+        src="../images/michioImages/michio-kaku-chalkboard.jpg"
+        id="chalkboard"
+        alt="Michio at chalkboard"
+      />
+      <p>
+        Michio Kaku is a renowned theoretical physicist, futurist, and educator,
+        known for his work in string theory. He is a professor of theoretical
+        physics at the City College of New York and a prolific author, having
+        written numerous best-selling books on physics and the future of
+        technology.
+      </p>
+      <p>
+        Dr. Kaku inspired me as a kid. I would get stuck to the TV watching him
+        speak with passion and excitement of what the future may bring. He has a
+        way of explaining advanced concepts in such fun ways. Growing up as a
+        kid in the suburbs of NYC, I always wanted to attend one of his classes
+        at CCNY.
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Books by Michio in my Library. Styling in h2 tag. -->
+    <h2
+      style="
+        border: #582f0e 5px solid;
+        background-color: #333d29;
+        opacity: 0.9;
+        display: inline-block;
+      "
+    >
+      Books in My Library
+    </h2>
+
+    <!-- book-container has two elements representing each book. Each book has an figure container then which has 3 elements:
+    1. img of bookcover
+    2. link to Amazon store for book, embedded in figcaption element
+    3. figcaption summary of book. 
+    -->
+    <div class="book-container">
+      <figure id="quantum">
+        <img
+          src="../images/michioImages/quantum-supremacy-thumbnail.jpg"
+          alt="Quantum Supremacy cover"
+        />
+        <figcaption class="amazonLink">
+          <a
+            href="https://www.amazon.com/Quantum-Supremacy-Computer-Revolution-Everything/dp/0385548362?crid=2G1V5A9CWH0SW&keywords=quantum+supremacy&qid=1677926697&s=books&sprefix=quantum+supremacy,stripbooks,264&sr=1-1&linkCode=sl1&tag=kaku-20&linkId=f34e9b6e436e012bdc385d01a8fd0f92&language=en_US&ref_=as_li_ss_tl"
+            >Purchase via Amazon</a
+          >
+        </figcaption>
+        <figcaption class="summary">
+          <u
+            ><i
+              >Quantum Supremacy: How the Quantum Computer Revolution will
+              Change Everything</i
+            ></u
+          ><br />
+          An exhilarating tale of humanity's next great technology, quantum
+          computing, and how by using properties of subatomic particles, these
+          massively powerful computers may solve our biggest problems like
+          global warming, incurable diseases, and world hunger.
+        </figcaption>
+      </figure>
+
+      <figure id="future">
+        <img
+          src="../images/michioImages/the-future-of-humanity-new-thumbnail.jpg"
+          alt="Future Humanity cover"
+        />
+        <figcaption class="amazonLink">
+          <a
+            href="https://www.amazon.com/Future-Humanity-Terraforming-Interstellar-Immortality/dp/0385542763/ref=as_li_ss_tl?ie=UTF8&qid=1515487385&sr=8-1&keywords=the+future+of+humanity&linkCode=sl1&tag=kaku-20&linkId=6af370f46c3bc3e600573d05d662cadb"
+            >Purchase via Amazon</a
+          >
+        </figcaption>
+        <figcaption class="summary">
+          <u
+            ><i
+              >The Future of Humanity: Terraforming Mars, Interstellar Travel,
+              Immortality, and Our Destiny Beyond Earth</i
+            ></u
+          ><br />
+          An exploration of the future humans will play in the exploration of
+          the cosmos through the frontiers of astrophyics, artificial
+          intelligence, and technological breakthroughs.
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- Gauging readers' thoughts about Michio Kaku to see if I'm being engaging enough. -->
+    <form action="#" id="survey">
+      <fieldset>
+        <legend>So What Do We Think About Michio Kaku and His Books?</legend>
+        <label>
+          <input type="radio" name="radio" id="amazing" />Amazing! I am ready to
+          nerd out!
+        </label>
+        <label>
+          <input type="radio" name="radio" id="wayAhead" />Way ahead of you!
+          I've read everything since his PhD thesis!
+        </label>
+        <label>
+          <input type="radio" name="radio" id="noSoul" />I have no soul </label
+        ><br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
